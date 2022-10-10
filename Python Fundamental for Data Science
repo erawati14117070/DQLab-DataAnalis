@@ -83,3 +83,130 @@ Belajar Python DQLAB
 <class 'list'>
 <class 'tuple'>
 <class 'dict'>
+
+#IF Statement
+#Penggunaan IF sebenarnya adalah sebuah statement untuk menentukan keputusan mana yang akan diambil berdasarkan suatu kondisi yang ditentukan oleh pembuat program.
+
+#Cobalah ketikkan kode seperti di bawah ini :
+i = 10 #inisialisasi variable i yang memiliki nilai 10
+
+if(i==10): #pengecekan nilai i apakah sama dengan 10
+    print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+
+#Klik tombol  maka akan keluar hasil seperti ini:
+ini adalah angka 10
+
+#Dengan mengunakan code yang sama, ubahlah nilai variable i menjadi 7.
+i = 7 #inisialisasi variable i yang memiliki nilai 10
+
+if(i==10): #pengecekan nilai i apakah sama dengan 10
+    print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+    
+#Kliklah tombol , maka kamu akan temukan tidak ada hasil yang ditampilkan. 
+#Hal ini disebabkan oleh nilai i=7 yang diinisialisasi tidak memenuhi syarat kondisi pada IF yang telah dibuat. 
+
+#IF … ELSE …
+#Cobalah ketikkan kode seperti di bawah ini:
+
+i = 10 #inisialisasi variable i yang memiliki nilai 10
+
+if(i==10): #pengecekan nilai i apakah sama dengan 10
+    print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+else:
+    print("bukan angka 10") #jika FALSE akan mencetak kalimat ini
+
+#Klik tombol  maka akan keluar hasil seperti ini:
+
+ini adalah angka 10
+
+#Penjelasan :
+#Variable i memenuhi syarat pada kondisi pertama, yaitu nilai sama dengan 10. Maka dari itu variable i tidak perlu dicek kembali di kondisi kedua.
+
+#Dengan menggunakan code yang sama, coba ubah nilai varible i menjadi 5.
+
+i = 5 #inisialisasi variable i yang memiliki nilai 10
+
+if(i==10): #pengecekan nilai i apakah sama dengan 10
+    print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+else:
+    print("bukan angka 10") #jika FALSE akan mencetak kalimat ini
+
+#Klik tombol  maka akan keluar hasil seperti ini:
+
+bukan angka 10
+
+#Penjelasan:
+#Nilai variable adalah 5. Pada kondisi pertama variable i tidak memenuhi. 
+#Maka output yang diberikan adalah perintah pada else yang merupakan hasil yang keluar apabila pengecekan pertama tidak sesuai.
+
+#IF … ELIF … ELSE ….
+#Cobalah ketikkan kode seperti di bawah ini: 
+
+i=5
+if(i==5):
+     print("ini adalah angka 5")
+elif(i>5):
+     print("lebih besar dari 5")
+else:
+     print("lebih kecil dari 5")
+
+#Klik tombol  maka akan keluar hasil seperti ini:
+
+ini adalah angka 5
+ 
+#Coba modifikasi kode sebelumnya dengan mengubah nilai variable i menjadi 7 seperti contoh dibawah ini:
+
+i=7
+if(i==5):
+     print("ini adalah angka 5")
+elif(i>5):
+     print("lebih besar dari 5")
+else:
+     print("lebih kecil dari 5")
+
+#Klik tombol  maka akan keluar hasil seperti ini:
+
+lebih besar dari 5
+
+#Penjelasan:
+#Untuk i=7, nilai variable i tidak memenuhi syarat dari kondisi pertama yaitu apakah i = 5? 
+#Selanjutnya, nilai variabel i dicek pada kondisi kedua, apakah i > 5? Kondisi kedua ini memenuhi bahwa i > 5, sehingga dicetaklah pernyataan "lebih besar dari 5".
+#Ubah kembali nilai variable i menjadi 3.
+
+i=3
+if(i==5):
+     print("ini adalah angka 5")
+elif(i>5):
+     print("lebih besar dari 5")
+else:
+     print("lebih kecil dari 5")
+
+#Klik tombol  maka akan keluar hasil seperti ini:
+
+lebih kecil dari 5
+
+#Penjelasan:
+#Untuk i=3, nilai variable i tidak memenuhi syarat dari kondisi pertama yaitu apakah i = 5? 
+#Selanjutnya, nilai variabel i dicek pada kondisi kedua, apakah i > 5? Kondisi kedua ini masih tidak memenuhi bahwa i > 5. 
+#Dengan demikian kondisi ketiga sebagai piliha terakhir yang akan dicetak yaitu pernyataan "lebih kecil dari 5".
+
+#NESTED IF
+#Fungsi IF sendiri dapat digunakan secara bertingkat atau dapat memiliki pengecekan lebih dari 1 kondisi, sebagai contoh:
+
+if ( i<7 && i <3)
+
+#Pernyataan ini berarti bahwa i harus bernilai kurang dari 7 dan juga harus kurang dari 3 agar bisa memenuhi pengecekan tersebut.
+
+#Tugas:
+#Ketiklah potongan code di bawah ini pada live code editor untuk melakukan pengecekan bertingkat
+i=2
+if (i<7):
+	print("nilai i kurang dari 7")
+	if (i<3):
+		print("nilai i kurang dari 7 dan kurang dari 3")
+	else:
+		print("nilai i kurang dari 7 tapi lebih dari 3")
+  
+#Output
+nilai i kurang dari 7
+nilai i kurang dari 7 dan kurang dari 3
